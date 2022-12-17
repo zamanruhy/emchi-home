@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Site title</title>
+    <meta name="description" content="Site description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site title" />
+    <meta property="og:description" content="Site description" />
+    <meta property="og:image" content="http://via.placeholder.com/1200x630.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="module" crossorigin src="assets/js/app.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/js/vendor.js" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <div class="app__header">
+        <header class="header">
+          <div class="container">
+            <div class="header__inner">
+              <a href="." class="logo logo_header"
+                ><img src="assets/img/logo.jpg" width="162" height="162" class="logo__img" alt="" />
+                <div>
+                  <b class="logo__title">ЭМЧИ</b
+                  ><span class="logo__lead">медицинский профилактический центр</span>
+                </div></a
+              ><span class="header__spacer"></span
+              ><a href="tel:+7(3012)37-99-20" class="header__contact">+7 (3012) 37-99-20</a
+              ><a href="mailto:hippocrat-info@mail.ru" class="header__contact"
+                >hippocrat-info@mail.ru</a
+              ><a href="#" class="header__widget"
+                ><svg viewBox="0 0 26 17">
+                  <path
+                    d="M7.89.25h1.67a.94.94 0 0 1 .13 1.87h-1.8a.94.94 0 0 0-.6.22l-.1.09L4.6 5.25h4.34a2.81 2.81 0 0 1 2.8 2.5h2.53a2.81 2.81 0 0 1 2.8-2.5h4.34l-2.6-2.82a.94.94 0 0 0-.56-.3h-1.82a.94.94 0 0 1-.12-1.87l.12-.01h1.69c.7 0 1.38.26 1.9.74l.16.17 4.55 4.93c.07.07.12.14.16.22.38.48.6 1.09.6 1.75v4.37a4.06 4.06 0 0 1-4.05 4.07H18.3a4.06 4.06 0 0 1-4.06-4.07v-2.8h-2.5v2.8a4.06 4.06 0 0 1-4.06 4.07H4.56A4.06 4.06 0 0 1 .5 12.43V8.06c0-.7.26-1.34.68-1.83l.05-.07.05-.07 4.54-4.93a2.81 2.81 0 0 1 1.83-.9h.24V.24Z"
+                  ></path></svg></a
+              ><a href="#" class="header__account-mobile" aria-label="Личный кабинет"
+                ><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18.68 19.1a9.72 9.72 0 0 0 3.07-7.1 9.75 9.75 0 1 0-19.5 0 9.72 9.72 0 0 0 3.06 7.1A9.72 9.72 0 0 0 12 21.75a9.72 9.72 0 0 0 6.68-2.65zM6.14 17.8A7.49 7.49 0 0 1 12 15a7.49 7.49 0 0 1 5.86 2.81A8.22 8.22 0 0 1 12 20.25a8.22 8.22 0 0 1-5.86-2.44zM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0z"
+                    clip-rule="evenodd"
+                  ></path></svg></a
+              ><a class="button button_primary button_md header__account-desktop" href="#"
+                >Личный кабинет</a
+              ><button class="hamburger" type="button" aria-label="Toggle menu">
+                <span class="hamburger__bar"></span><span class="hamburger__bar"></span
+                ><span class="hamburger__bar"></span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <nav class="nav">
+          <div class="container">
+            <div class="nav__inner">
+              <form class="search">
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="Поиск по сайту"
+                  required
+                /><button class="search__button" aria-label="Искать">
+                  <svg viewBox="0 0 20 20">
+                    <path
+                      d="M7 14c1.76 0 3.37-.66 4.6-1.74l1.34 2.8s.28.22.65.6c.39.36.9.85 1.39 1.36l1.36 1.4.6.64 2.12-2.12-.65-.6-1.39-1.36c-.47-.45-.92-.91-1.37-1.38-.37-.38-.6-.66-.6-.66l-2.8-1.33A7 7 0 1 0 0 7a7 7 0 0 0 7.01 6.99Z"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+              <ul class="nav__list">
+                <li><a class="nav__link" href="#">О нас</a></li>
+                <li><a class="nav__link" href="#services">Услуги</a></li>
+                <li><a class="nav__link" href="#news">Новости</a></li>
+                <li><a class="nav__link" href="#">Вопрос-ответ</a></li>
+                <li><a class="nav__link" href="#">Документы</a></li>
+                <li><a class="nav__link" href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <main class="app__main">
+        <section class="intro">
+          <img
+            src="assets/img/intro.jpg"
+            width="2161"
+            height="693"
+            alt=""
+            fetchpriority="high"
+            class="intro__img"
+          />
+          <div class="container">
+            <div class="intro__inner">
+              <p class="intro__subtitle">Медицинский профилактический центр</p>
+              <h1 class="intro__title">«ЭМЧИ»</h1>
+              <div class="intro__actions">
+                <a class="button button_tertiary button_md intro__button" href="#"
+                  >Записаться на прием</a
+                ><button
+                  class="button button_secondary button_md intro__button"
+                  onclick="callbackModal.showModal()"
+                  type="button"
+                >
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
+          <dialog id="callbackModal" class="callback">
+            <h3 class="callback__title">Заказать обратный звонок</h3>
+            <p class="callback__lead">
+              Заполните форму обратной связи и наш специалист свяжется с вами в ближайшее время и
+              ответит на все интересующие вопросы
+            </p>
+            <form action="" class="callback__form">
+              <div class="callback__row">
+                <div class="input input_primary">
+                  <input
+                    class="input__input"
+                    type="text"
+                    as="button"
+                    name="name"
+                    placeholder="ФИО"
+                    required
+                  />
+                </div>
+                <div class="input input_primary">
+                  <input
+                    class="input__input"
+                    type="tel"
+                    as="button"
+                    name="phone"
+                    placeholder="+ 7 (___) __-__-__"
+                    required
+                  />
+                </div>
+                <button class="button button_primary button_md callback__button" type="submit">
+                  Отправить
+                </button>
+              </div>
+              <label class="checkbox checkbox_primary" style=""
+                ><input class="checkbox__input" type="checkbox" name="allow" required /><span
+                  class="checkbox__box"
+                  aria-hidden="true"
+                  ><svg viewBox="0 0 10 7" fill="none" class="checkbox__icon">
+                    <path
+                      d="M8.28 1.1 3.47 5.9l-2.4-2.4"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path></svg></span
+                ><span class="checkbox__label"
+                  >Я согласен на обработку своих персональных данных</span
+                ></label
+              >
+            </form>
+          </dialog>
+        </section>
+        <section class="parts">
+          <div class="container">
+            <div class="parts__inner">
+              <div class="parts__main">
+                <h2 class="parts__title">Запись к врачу online</h2>
+                <p class="parts__lead">
+                  Воспользуйтесь online сервисами для Записи на прием к врачу, входа в Личный
+                  кабинет, либо получите ответы на интересующие вопросы через Обратную связь
+                </p>
+              </div>
+              <div class="parts__items">
+                <a href="#" class="parts__item"
+                  ><svg viewBox="0 0 50 50" class="parts__item-icon">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.69.13c-.18.09-.42.3-.54.47-.18.26-.22.46-.25 1.35L8.87 3l-3.97.02c-3.93.03-3.98.03-4.28.25a1.7 1.7 0 0 0-.46.55C0 4.12 0 5.86 0 23.57 0 41.27.01 43 .16 43.32c.09.18.3.43.46.55l.3.22 12.48.02 12.46.03.37.5c.87 1.2 2.38 2.58 3.78 3.45 1.45.9 3.36 1.57 5.08 1.8 2.58.35 5.56-.17 7.77-1.37 1.36-.73 2.1-1.28 3.24-2.42a12.02 12.02 0 0 0 2.43-3.24 13.26 13.26 0 0 0 .83-10.1 13.53 13.53 0 0 0-2.01-3.88l-.28-.36V16.34c0-11.04-.01-12.22-.16-12.52a1.7 1.7 0 0 0-.46-.55c-.3-.22-.35-.22-4.29-.25L38.18 3v-.94c0-1.07-.14-1.48-.62-1.82-.23-.16-.44-.22-.84-.22-.4 0-.62.06-.84.22-.49.34-.63.75-.63 1.82V3H29.4v-.94c0-1.07-.13-1.48-.62-1.82-.22-.16-.44-.22-.84-.22-.4 0-.62.06-.84.22-.49.34-.63.75-.63 1.82V3h-5.85v-.94c0-1.07-.14-1.48-.63-1.82-.22-.16-.44-.22-.84-.22-.4 0-.61.06-.84.22-.48.34-.62.75-.62 1.82V3h-5.86v-.94c0-1.06-.14-1.48-.61-1.81A1.66 1.66 0 0 0 9.69.13Zm-.8 6.7c0 1.01.14 1.43.62 1.77.23.16.44.22.84.22.4 0 .62-.06.84-.22.48-.34.63-.76.63-1.78v-.89h5.86v.9c0 1.01.14 1.43.62 1.77.23.16.44.22.84.22.4 0 .62-.06.84-.22.48-.34.63-.76.63-1.78v-.89h5.85v.9c0 1.01.15 1.43.63 1.77.22.16.44.22.84.22.4 0 .62-.06.84-.22.48-.34.62-.76.62-1.78v-.89h5.86v.9c0 1.01.15 1.43.63 1.77.22.16.44.22.84.22.4 0 .61-.06.84-.22.48-.34.62-.76.62-1.78v-.89h5.96v5.87H2.93V5.93h5.96v.9Zm35.25 13.42c0 3.03-.01 5.52-.03 5.52l-.8-.44a14.63 14.63 0 0 0-3.76-1.44c-.86-.19-1.3-.22-2.73-.22-1.27 0-1.92.04-2.5.17a13.26 13.26 0 0 0-7.91 4.9l-.62.77-1.95-.02c-1.67-.02-2 0-2.3.14-.2.1-.45.3-.57.47-.16.23-.22.45-.22.85 0 .4.06.61.22.84.37.51.73.62 2.12.62.92 0 1.23.03 1.23.12 0 .07-.09.4-.2.75-.1.34-.24.95-.3 1.34l-.12.72h-.92c-1.06 0-1.47.14-1.81.62-.16.23-.22.45-.22.85 0 .4.06.61.22.84.34.48.75.62 1.81.62h.92l.12.72c.06.4.2 1 .3 1.35.11.34.2.67.2.74 0 .1-2.2.12-10.7.12H2.93V14.73h41.21v5.52ZM9.7 17.92c-.18.08-.42.3-.54.46-.16.23-.21.44-.21.84 0 .4.05.62.21.84.4.56.69.63 2.67.63 1.97 0 2.26-.07 2.66-.63.16-.22.22-.44.22-.84 0-.4-.06-.61-.22-.84-.4-.56-.68-.63-2.68-.62-1.45 0-1.85.03-2.11.16Zm11.82 0c-.18.08-.42.3-.54.46-.16.23-.22.44-.22.84 0 .4.06.62.22.84.4.56.68.63 2.66.63s2.27-.07 2.67-.63c.16-.22.21-.44.21-.84 0-.4-.05-.61-.21-.84-.4-.56-.69-.63-2.68-.62-1.45 0-1.86.03-2.11.16Zm11.71 0c-.17.08-.41.3-.53.46-.16.23-.22.44-.22.84 0 .4.06.62.22.84.4.56.68.63 2.66.63s2.27-.07 2.66-.63c.17-.22.22-.44.22-.84 0-.4-.05-.61-.22-.84-.4-.56-.68-.63-2.67-.62-1.45 0-1.86.03-2.12.16ZM9.7 23.78c-.18.09-.42.3-.54.46-.16.23-.21.44-.21.84 0 .4.05.62.21.85.4.55.69.62 2.67.62 1.97 0 2.26-.07 2.66-.62.16-.23.22-.45.22-.85 0-.4-.06-.61-.22-.84-.4-.56-.68-.62-2.68-.62-1.45 0-1.85.03-2.11.16Zm11.82 0c-.18.09-.42.3-.54.46-.16.23-.22.44-.22.84 0 .4.06.62.22.85.4.55.68.62 2.66.62s2.27-.07 2.67-.62c.16-.23.21-.45.21-.85 0-.4-.05-.61-.21-.84-.4-.56-.69-.62-2.68-.62-1.45 0-1.86.03-2.11.16ZM38 26.65c1.12.14 2.13.42 3.1.88a9.93 9.93 0 0 1 2.95 2.05 9.92 9.92 0 0 1 2.05 2.95 10.02 10.02 0 0 1 0 8.56 9.92 9.92 0 0 1-2.05 2.94 9.92 9.92 0 0 1-2.95 2.06 10 10 0 0 1-8.56 0 9.92 9.92 0 0 1-2.93-2.06 9.93 9.93 0 0 1-2.06-2.94 10.02 10.02 0 0 1 0-8.56c.21-.45.59-1.12.84-1.5.58-.87 1.8-2.09 2.66-2.67a10.7 10.7 0 0 1 4.46-1.7 8.71 8.71 0 0 1 2.5-.01Zm-28.3 3c-.18.08-.42.29-.54.45-.16.23-.21.45-.21.85 0 .4.05.61.21.84.4.55.69.62 2.67.62 1.97 0 2.26-.07 2.66-.62.16-.23.22-.45.22-.84 0-.4-.06-.62-.22-.85-.4-.55-.68-.62-2.68-.62-1.45 0-1.85.03-2.11.16Zm26.46-.01c-.17.09-.41.3-.53.46-.22.3-.22.35-.22 3.78 0 3.43 0 3.47.22 3.77.43.6.54.62 4.13.62 3.58 0 3.7-.01 4.12-.62.17-.23.22-.44.22-.84 0-.4-.05-.62-.22-.85-.41-.58-.63-.62-3.24-.62h-2.35V33c0-2.6-.04-2.83-.6-3.23a1.66 1.66 0 0 0-1.53-.12ZM9.7 35.5c-.18.1-.42.3-.54.47-.16.22-.21.44-.21.84 0 .4.05.61.21.84.4.56.69.62 2.67.62 1.97 0 2.26-.06 2.66-.62.16-.23.22-.44.22-.84 0-.4-.06-.62-.22-.85-.4-.55-.68-.62-2.68-.62-1.45 0-1.85.04-2.11.16Z"
+                    ></path>
+                  </svg>
+                  <p>Записаться <br />на прием к врачу</p></a
+                ><a href="#" class="parts__item"
+                  ><svg viewBox="0 0 50 50" class="parts__item-icon">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.03.14c-1.6.27-3.43 1-4.86 1.94a13.16 13.16 0 0 0-3.48 3.52 13.02 13.02 0 0 0-1.83 4.74 12.5 12.5 0 0 0 .99 7.12c.78 1.7 2.5 3.79 3.9 4.74.3.21.56.4.56.44a3 3 0 0 1-.67.3A22.48 22.48 0 0 0 2.07 34.26 21.77 21.77 0 0 0 .1 41.6c-.07.72-.1 2.5-.08 4.35.03 3.05.03 3.13.25 3.43.12.17.37.37.55.46.3.15 2.16.16 21.27.16s20.96-.01 21.27-.16c.18-.09.43-.3.55-.46.22-.3.22-.34.22-3.87 0-1.96-.03-3.93-.08-4.36l-.08-.8.74-.4c.84-.46 1.99-1.34 2.58-1.99a10.74 10.74 0 0 0 2.46-4.43c.23-.86.26-1.14.26-2.58a7.6 7.6 0 0 0-.25-2.55 10.5 10.5 0 0 0-7.4-7.38 7.67 7.67 0 0 0-2.6-.27 7.5 7.5 0 0 0-2.56.26c-1.7.45-3.15 1.25-4.44 2.42l-.66.6-.71-.31c-.39-.18-1.14-.49-1.67-.68l-.97-.36.67-.48c1.5-1.06 3.1-3.02 3.9-4.74a12.52 12.52 0 0 0 1.14-5.22c0-2.29-.7-4.61-1.98-6.64a13.6 13.6 0 0 0-2.23-2.56 13.65 13.65 0 0 0-2.65-1.78C26.7.81 25.11.31 24.04.14c-1.13-.19-2.9-.18-4.01 0Zm4.3 3.07a9.99 9.99 0 0 1 4.05 2.13 10.17 10.17 0 0 1 2.85 4.75c.17.7.21 1.17.21 2.2a8 8 0 0 1-.97 4.15 8.95 8.95 0 0 1-4.22 4.2 8.1 8.1 0 0 1-4.17.97 8.1 8.1 0 0 1-4.17-.97 8.95 8.95 0 0 1-4.22-4.2 8 8 0 0 1-.97-4.15c0-1.03.04-1.5.21-2.18.24-.96.8-2.2 1.34-3.04A9.36 9.36 0 0 1 18 3.9a8.44 8.44 0 0 1 4.43-.92c.6.02 1.45.13 1.9.24Zm17.24 20.66c.32.08 1 .35 1.52.6.79.39 1.07.6 1.83 1.34.75.75.96 1.04 1.35 1.82.63 1.28.79 1.96.79 3.32 0 1.37-.16 2.04-.8 3.32a5.4 5.4 0 0 1-1.34 1.81c-.68.67-1.09.99-1.69 1.3-.43.22-1.14.5-1.57.62a6.1 6.1 0 0 1-1.9.22 6.34 6.34 0 0 1-3.34-.79 5.5 5.5 0 0 1-1.83-1.34 5.47 5.47 0 0 1-1.35-1.82 6.25 6.25 0 0 1-.8-3.32c0-1.36.17-2.04.8-3.32.39-.79.6-1.06 1.35-1.81a7.17 7.17 0 0 1 3.84-2.06 8.8 8.8 0 0 1 3.14.1Zm-17.7.83c.55.06 1.45.2 1.99.3 1.1.22 2.92.8 3.9 1.24l.65.3-.28.72c-.15.4-.38 1.18-.5 1.74-.17.85-.2 1.24-.16 2.3.06 1.47.34 2.7.9 3.9 1.3 2.79 3.8 4.9 6.79 5.68.83.22 1.19.26 2.42.27h1.44l.06.25c.03.14.08 1.47.12 2.96l.05 2.7H2.91l.05-2.7c.04-2.14.1-2.95.25-3.84a19.29 19.29 0 0 1 3.33-7.96 19.32 19.32 0 0 1 17.32-7.86Zm15.22 2.01c-.18.1-.42.3-.54.47-.19.26-.22.46-.25 1.3l-.04 1h-.88c-1.02 0-1.44.15-1.78.63-.16.23-.22.44-.22.84 0 .4.06.62.22.84.35.48.76.63 1.79.63h.9v.89c0 1.01.14 1.43.62 1.77.23.16.44.22.84.22.4 0 .62-.06.85-.22.48-.34.63-.76.63-1.77v-.9h.89c1.02 0 1.44-.14 1.78-.62.17-.22.22-.44.22-.84 0-.4-.05-.61-.22-.84-.34-.48-.76-.62-1.78-.62h-.9v-.9c0-1-.14-1.43-.6-1.76a1.68 1.68 0 0 0-1.53-.12Z"
+                    ></path>
+                  </svg>
+                  <p>Войти <br />в личный кабинет</p></a
+                ><a href="#" class="parts__item"
+                  ><svg viewBox="0 0 50 50" class="parts__item-icon">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.72.17c-.87.18-2.32.81-3.1 1.35a10.8 10.8 0 0 0-2.2 2.27c-.22.35-.57 1-.76 1.46C-.03 6.88 0 6.11 0 22.06V36.4l.22.33c.48.71 1.4.93 2.04.48.18-.13 2.32-1.9 4.76-3.93l4.43-3.69h1.03l.05 2.62c.05 2.21.09 2.74.26 3.44a9.5 9.5 0 0 0 1.62 3.28c.3.37.84.93 1.2 1.24.78.67 2.3 1.46 3.39 1.76.77.21.88.22 10.23.27l9.45.05 4.47 3.72c2.46 2.05 4.62 3.8 4.8 3.9a1.5 1.5 0 0 0 1.46-.13c.15-.11.36-.36.45-.54.14-.31.15-1.62.13-15.77l-.03-15.42-.27-.88a9.09 9.09 0 0 0-2.4-3.88 9.19 9.19 0 0 0-4-2.1 21.3 21.3 0 0 0-3.22-.2l-2.56-.05V9.8c0-1.48-.16-2.94-.4-3.74a8.96 8.96 0 0 0-3.08-4.4A9.96 9.96 0 0 0 31.31.3l-.88-.27L19 0C8.23-.01 7.52 0 6.72.17ZM30.21 3.1a8 8 0 0 1 1.35.5 6.2 6.2 0 0 1 2.32 2.35c.61 1.26.6 1.1.6 8.83 0 7.74.01 7.57-.6 8.85a6.23 6.23 0 0 1-2.47 2.43c-1.26.6-1.02.6-11.36.6-7.82 0-9.46.02-9.72.14-.18.07-1.9 1.45-3.83 3.07l-3.52 2.94-.03-12.37C2.93 6.7 2.9 7.31 3.6 5.94a5.7 5.7 0 0 1 3.74-2.88c.52-.11 2.58-.14 11.38-.14 10.33-.01 10.79 0 11.5.18ZM17.4 6.43a5.42 5.42 0 0 0-3.52 2.88c-.35.73-.5 1.4-.52 2.17 0 .41.05.68.18.9.26.44.73.71 1.25.71.83 0 1.37-.5 1.47-1.38.1-.74.23-1.11.54-1.54a2.42 2.42 0 0 1 1.93-.92c.65 0 1.01.12 1.47.47a2.42 2.42 0 0 1-.25 4.03c-.23.12-.73.27-1.12.32-.6.1-.75.16-1.1.48l-.4.37-.02 1.35c-.03 1.28-.02 1.37.2 1.69.29.44.98.74 1.47.65a1.62 1.62 0 0 0 1.24-1.52c0-.23.05-.3.27-.35a5.56 5.56 0 0 0 3.64-5.14 5.9 5.9 0 0 0-.62-2.43 5.65 5.65 0 0 0-3.66-2.8 4.93 4.93 0 0 0-2.45.06Zm25.48 7.67a5.4 5.4 0 0 1 2.5 1.46 5.7 5.7 0 0 1 1.45 2.3c.2.54.2.56.23 14 .01 7.4 0 13.47-.03 13.47-.02 0-1.63-1.32-3.55-2.93-1.93-1.6-3.6-2.97-3.7-3.02-.12-.07-3.47-.11-9.9-.13l-9.7-.04-.7-.22a5.43 5.43 0 0 1-2.91-2.1 7.9 7.9 0 0 1-.7-1.29l-.29-.68-.03-2.66-.03-2.67h7.13c7.57 0 7.81-.01 9.15-.48.32-.11.92-.4 1.34-.64l.75-.44h3.58c3.5 0 3.59 0 3.96-.22.49-.27.82-.91.73-1.42a1.57 1.57 0 0 0-.74-1.07c-.31-.22-.4-.22-2.62-.22-2.14 0-2.29-.02-2.24-.18l.32-.8c.14-.34.33-1.01.42-1.48l.16-.86 1.87-.03c1.72-.02 1.9-.04 2.15-.23.4-.3.63-.65.68-1.08.07-.5-.28-1.17-.74-1.42-.3-.16-.58-.18-2.13-.18h-1.78v-4.89h2.42c1.8 0 2.55.04 2.95.15ZM18 20.6c-.18.1-.4.34-.52.51a1.66 1.66 0 0 0-.05 1.44c.47.9 1.7 1.03 2.39.25.39-.45.47-.91.26-1.47-.22-.56-.63-.85-1.27-.9-.38-.03-.57.01-.81.16Zm3.2 10.97c-.25.13-.5.36-.6.56-.37.7-.14 1.55.52 1.96.31.19.51.2 10.2.2h9.87l.33-.23c.43-.29.73-.98.64-1.47a1.67 1.67 0 0 0-.9-1.1c-.27-.12-2.05-.14-9.98-.14h-9.66l-.42.22Z"
+                    ></path>
+                  </svg>
+                  <p>Обратная <br />связь</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <section id="services" class="services">
+            <div class="services__head">
+              <div class="">
+                <h2 class="title services__title">Услуги</h2>
+                <p class="services__lead">
+                  Повседневная практика показывает, что современная методология разработки, в своём
+                  классическом представлении, допускает внедрение анализа существующих паттернов
+                  поведения
+                </p>
+              </div>
+              <div class="services__schedule">
+                <h3 class="services__schedule-title">График работы</h3>
+                <div class="services__schedule-items">
+                  <div class="">Понедельник-пятница: <b>09:00-16:00</b></div>
+                  <div class="">Перерыв: <b>12:00-12:30</b></div>
+                  <div class="">Суббота-Воскресение: <b>Выходной</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="services__grid">
+              <article class="service">
+                <img
+                  src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="service__img"
+                />
+                <div class="service__content">
+                  <h3 class="service__title">Психиатрическое освидетельствование</h3>
+                  <span class="service__price">от 2500 <span>₽</span></span>
+                  <div class="service__footer">
+                    <a class="button button_secondary button_md" href="#">Записаться на прием</a
+                    ><a href="#" class="service__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="service">
+                <img
+                  src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="service__img"
+                />
+                <div class="service__content">
+                  <h3 class="service__title">Водительская справка 003-в/у</h3>
+                  <span class="service__price">от 2500 <span>₽</span></span>
+                  <div class="service__footer">
+                    <a class="button button_secondary button_md" href="#">Записаться на прием</a
+                    ><a href="#" class="service__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="service">
+                <img
+                  src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="service__img"
+                />
+                <div class="service__content">
+                  <h3 class="service__title">Психиатрическое освидетельствование</h3>
+                  <span class="service__price">от 2500 <span>₽</span></span>
+                  <div class="service__footer">
+                    <a class="button button_secondary button_md" href="#">Записаться на прием</a
+                    ><a href="#" class="service__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="service">
+                <img
+                  src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="service__img"
+                />
+                <div class="service__content">
+                  <h3 class="service__title">Водительская справка 003-в/у</h3>
+                  <span class="service__price">от 2500 <span>₽</span></span>
+                  <div class="service__footer">
+                    <a class="button button_secondary button_md" href="#">Записаться на прием</a
+                    ><a href="#" class="service__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="service">
+                <img
+                  src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="service__img"
+                />
+                <div class="service__content">
+                  <h3 class="service__title">Психиатрическое освидетельствование</h3>
+                  <span class="service__price">от 2500 <span>₽</span></span>
+                  <div class="service__footer">
+                    <a class="button button_secondary button_md" href="#">Записаться на прием</a
+                    ><a href="#" class="service__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="service">
+                <img
+                  src="https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="service__img"
+                />
+                <div class="service__content">
+                  <h3 class="service__title">Водительская справка 003-в/у</h3>
+                  <span class="service__price">от 2500 <span>₽</span></span>
+                  <div class="service__footer">
+                    <a class="button button_secondary button_md" href="#">Записаться на прием</a
+                    ><a href="#" class="service__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="services__footer">
+              <a href="#" class="services__more"
+                >Смотреть все
+                <svg viewBox="0 0 8 13">
+                  <path
+                    d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                  ></path></svg
+              ></a>
+            </div>
+          </section>
+          <section id="news" class="news-feed">
+            <h2 class="title news-feed__title">Новости</h2>
+            <div class="news-feed__grid">
+              <article class="news">
+                <img
+                  src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="news__img"
+                />
+                <div class="news__content">
+                  <h3 class="news__title">Лечение алкогольной зависимости</h3>
+                  <p class="news__text">
+                    Повседневная практика показывает, что современная методология разработки, в
+                    своём классическом...
+                  </p>
+                  <div class="news__footer">
+                    <time class="news__date">24.10.2022</time
+                    ><a href="#" class="news__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="news__img"
+                />
+                <div class="news__content">
+                  <h3 class="news__title">Лечение алкогольной зависимости</h3>
+                  <p class="news__text">
+                    Повседневная практика показывает, что современная методология разработки, в
+                    своём классическом...
+                  </p>
+                  <div class="news__footer">
+                    <time class="news__date">24.10.2022</time
+                    ><a href="#" class="news__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="news__img"
+                />
+                <div class="news__content">
+                  <h3 class="news__title">Лечение алкогольной зависимости</h3>
+                  <p class="news__text">
+                    Повседневная практика показывает, что современная методология разработки, в
+                    своём классическом...
+                  </p>
+                  <div class="news__footer">
+                    <time class="news__date">24.10.2022</time
+                    ><a href="#" class="news__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="news__img"
+                />
+                <div class="news__content">
+                  <h3 class="news__title">Лечение алкогольной зависимости</h3>
+                  <p class="news__text">
+                    Повседневная практика показывает, что современная методология разработки, в
+                    своём классическом...
+                  </p>
+                  <div class="news__footer">
+                    <time class="news__date">24.10.2022</time
+                    ><a href="#" class="news__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="news__img"
+                />
+                <div class="news__content">
+                  <h3 class="news__title">Лечение алкогольной зависимости</h3>
+                  <p class="news__text">
+                    Повседневная практика показывает, что современная методология разработки, в
+                    своём классическом...
+                  </p>
+                  <div class="news__footer">
+                    <time class="news__date">24.10.2022</time
+                    ><a href="#" class="news__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+              <article class="news">
+                <img
+                  src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80"
+                  alt="#"
+                  loading="lazy"
+                  decoding="async"
+                  class="news__img"
+                />
+                <div class="news__content">
+                  <h3 class="news__title">Лечение алкогольной зависимости</h3>
+                  <p class="news__text">
+                    Повседневная практика показывает, что современная методология разработки, в
+                    своём классическом...
+                  </p>
+                  <div class="news__footer">
+                    <time class="news__date">24.10.2022</time
+                    ><a href="#" class="news__more"
+                      >Подробнее
+                      <svg viewBox="0 0 8 13">
+                        <path
+                          d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                        ></path></svg
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="news-feed__footer">
+              <a href="#" class="news-feed__more"
+                >Смотреть все
+                <svg viewBox="0 0 8 13">
+                  <path
+                    d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"
+                  ></path></svg
+              ></a>
+            </div>
+          </section>
+          <section class="testimonials">
+            <h2 class="title testimonials__title">Отзывы</h2>
+            <div class="testimonials__content">
+              <button class="testimonials__prev">
+                <svg viewBox="0 0 8 13">
+                  <path d="M7.94 1.42 6.84.32.65 6.5l6.19 6.19 1.1-1.1L2.86 6.5l5.08-5.08Z"></path>
+                </svg></button
+              ><button class="testimonials__next">
+                <svg viewBox="0 0 8 13">
+                  <path d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"></path>
+                </svg>
+              </button>
+              <div class="swiper testimonials__slider">
+                <div class="swiper-wrapper testimonials__wrapper">
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <img
+                            src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=100&amp;h=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                            class="testimonial__ava-img"
+                          />
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Иванов И.И.</div>
+                          <div class="testimonial__info-row">Врач: Петров В.В.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>
+                          Имеется спорная точка зрения, гласящая примерно следующее: сделанные на
+                          базе интернет-аналитики выводы, инициированные исключительно синтетически,
+                          описаны максимально подробно. Прежде всего, повышение уровня гражданского
+                          сознания не оставляет шанса для позиций, занимаемых участниками в
+                          отношении поставленных задач.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <svg viewBox="0 0 50 50" class="testimonial__ava-icon">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20.03.14c-1.6.27-3.43 1-4.86 1.94a13.16 13.16 0 0 0-3.48 3.52 13.02 13.02 0 0 0-1.83 4.74 12.5 12.5 0 0 0 .99 7.12c.78 1.7 2.5 3.79 3.9 4.74.3.21.56.4.56.44a3 3 0 0 1-.67.3A22.48 22.48 0 0 0 2.07 34.26 21.77 21.77 0 0 0 .1 41.6c-.07.72-.1 2.5-.08 4.35.03 3.05.03 3.13.25 3.43.12.17.37.37.55.46.3.15 2.16.16 21.27.16s20.96-.01 21.27-.16c.18-.09.43-.3.55-.46.22-.3.22-.34.22-3.87 0-1.96-.03-3.93-.08-4.36l-.08-.8.74-.4c.84-.46 1.99-1.34 2.58-1.99a10.74 10.74 0 0 0 2.46-4.43c.23-.86.26-1.14.26-2.58a7.6 7.6 0 0 0-.25-2.55 10.5 10.5 0 0 0-7.4-7.38 7.67 7.67 0 0 0-2.6-.27 7.5 7.5 0 0 0-2.56.26c-1.7.45-3.15 1.25-4.44 2.42l-.66.6-.71-.31c-.39-.18-1.14-.49-1.67-.68l-.97-.36.67-.48c1.5-1.06 3.1-3.02 3.9-4.74a12.52 12.52 0 0 0 1.14-5.22c0-2.29-.7-4.61-1.98-6.64a13.6 13.6 0 0 0-2.23-2.56 13.65 13.65 0 0 0-2.65-1.78C26.7.81 25.11.31 24.04.14c-1.13-.19-2.9-.18-4.01 0Zm4.3 3.07a9.99 9.99 0 0 1 4.05 2.13 10.17 10.17 0 0 1 2.85 4.75c.17.7.21 1.17.21 2.2a8 8 0 0 1-.97 4.15 8.95 8.95 0 0 1-4.22 4.2 8.1 8.1 0 0 1-4.17.97 8.1 8.1 0 0 1-4.17-.97 8.95 8.95 0 0 1-4.22-4.2 8 8 0 0 1-.97-4.15c0-1.03.04-1.5.21-2.18.24-.96.8-2.2 1.34-3.04A9.36 9.36 0 0 1 18 3.9a8.44 8.44 0 0 1 4.43-.92c.6.02 1.45.13 1.9.24Zm17.24 20.66c.32.08 1 .35 1.52.6.79.39 1.07.6 1.83 1.34.75.75.96 1.04 1.35 1.82.63 1.28.79 1.96.79 3.32 0 1.37-.16 2.04-.8 3.32a5.4 5.4 0 0 1-1.34 1.81c-.68.67-1.09.99-1.69 1.3-.43.22-1.14.5-1.57.62a6.1 6.1 0 0 1-1.9.22 6.34 6.34 0 0 1-3.34-.79 5.5 5.5 0 0 1-1.83-1.34 5.47 5.47 0 0 1-1.35-1.82 6.25 6.25 0 0 1-.8-3.32c0-1.36.17-2.04.8-3.32.39-.79.6-1.06 1.35-1.81a7.17 7.17 0 0 1 3.84-2.06 8.8 8.8 0 0 1 3.14.1Zm-17.7.83c.55.06 1.45.2 1.99.3 1.1.22 2.92.8 3.9 1.24l.65.3-.28.72c-.15.4-.38 1.18-.5 1.74-.17.85-.2 1.24-.16 2.3.06 1.47.34 2.7.9 3.9 1.3 2.79 3.8 4.9 6.79 5.68.83.22 1.19.26 2.42.27h1.44l.06.25c.03.14.08 1.47.12 2.96l.05 2.7H2.91l.05-2.7c.04-2.14.1-2.95.25-3.84a19.29 19.29 0 0 1 3.33-7.96 19.32 19.32 0 0 1 17.32-7.86Zm15.22 2.01c-.18.1-.42.3-.54.47-.19.26-.22.46-.25 1.3l-.04 1h-.88c-1.02 0-1.44.15-1.78.63-.16.23-.22.44-.22.84 0 .4.06.62.22.84.35.48.76.63 1.79.63h.9v.89c0 1.01.14 1.43.62 1.77.23.16.44.22.84.22.4 0 .62-.06.85-.22.48-.34.63-.76.63-1.77v-.9h.89c1.02 0 1.44-.14 1.78-.62.17-.22.22-.44.22-.84 0-.4-.05-.61-.22-.84-.34-.48-.76-.62-1.78-.62h-.9v-.9c0-1-.14-1.43-.6-1.76a1.68 1.68 0 0 0-1.53-.12Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Бадмацыренова А.Б.</div>
+                          <div class="testimonial__info-row">Врач: Базардоржиев К.О.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>
+                          Имеется спорная точка зрения, гласящая примерно следующее: сделанные на
+                          базе интернет-аналитики выводы, инициированные исключительно синтетически,
+                          описаны максимально подробно.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <img
+                            src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=100&amp;h=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                            class="testimonial__ava-img"
+                          />
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Сидорова А.Б.</div>
+                          <div class="testimonial__info-row">Врач: Петров В.В.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>Имеется спорная точка зрения, гласящая примерно следующее</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <img
+                            src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=100&amp;h=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                            class="testimonial__ava-img"
+                          />
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Иванов И.И.</div>
+                          <div class="testimonial__info-row">Врач: Петров В.В.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>
+                          Имеется спорная точка зрения, гласящая примерно следующее: сделанные на
+                          базе интернет-аналитики выводы, инициированные исключительно синтетически,
+                          описаны максимально подробно. Прежде всего, повышение уровня гражданского
+                          сознания не оставляет шанса для позиций, занимаемых участниками в
+                          отношении поставленных задач.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <svg viewBox="0 0 50 50" class="testimonial__ava-icon">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20.03.14c-1.6.27-3.43 1-4.86 1.94a13.16 13.16 0 0 0-3.48 3.52 13.02 13.02 0 0 0-1.83 4.74 12.5 12.5 0 0 0 .99 7.12c.78 1.7 2.5 3.79 3.9 4.74.3.21.56.4.56.44a3 3 0 0 1-.67.3A22.48 22.48 0 0 0 2.07 34.26 21.77 21.77 0 0 0 .1 41.6c-.07.72-.1 2.5-.08 4.35.03 3.05.03 3.13.25 3.43.12.17.37.37.55.46.3.15 2.16.16 21.27.16s20.96-.01 21.27-.16c.18-.09.43-.3.55-.46.22-.3.22-.34.22-3.87 0-1.96-.03-3.93-.08-4.36l-.08-.8.74-.4c.84-.46 1.99-1.34 2.58-1.99a10.74 10.74 0 0 0 2.46-4.43c.23-.86.26-1.14.26-2.58a7.6 7.6 0 0 0-.25-2.55 10.5 10.5 0 0 0-7.4-7.38 7.67 7.67 0 0 0-2.6-.27 7.5 7.5 0 0 0-2.56.26c-1.7.45-3.15 1.25-4.44 2.42l-.66.6-.71-.31c-.39-.18-1.14-.49-1.67-.68l-.97-.36.67-.48c1.5-1.06 3.1-3.02 3.9-4.74a12.52 12.52 0 0 0 1.14-5.22c0-2.29-.7-4.61-1.98-6.64a13.6 13.6 0 0 0-2.23-2.56 13.65 13.65 0 0 0-2.65-1.78C26.7.81 25.11.31 24.04.14c-1.13-.19-2.9-.18-4.01 0Zm4.3 3.07a9.99 9.99 0 0 1 4.05 2.13 10.17 10.17 0 0 1 2.85 4.75c.17.7.21 1.17.21 2.2a8 8 0 0 1-.97 4.15 8.95 8.95 0 0 1-4.22 4.2 8.1 8.1 0 0 1-4.17.97 8.1 8.1 0 0 1-4.17-.97 8.95 8.95 0 0 1-4.22-4.2 8 8 0 0 1-.97-4.15c0-1.03.04-1.5.21-2.18.24-.96.8-2.2 1.34-3.04A9.36 9.36 0 0 1 18 3.9a8.44 8.44 0 0 1 4.43-.92c.6.02 1.45.13 1.9.24Zm17.24 20.66c.32.08 1 .35 1.52.6.79.39 1.07.6 1.83 1.34.75.75.96 1.04 1.35 1.82.63 1.28.79 1.96.79 3.32 0 1.37-.16 2.04-.8 3.32a5.4 5.4 0 0 1-1.34 1.81c-.68.67-1.09.99-1.69 1.3-.43.22-1.14.5-1.57.62a6.1 6.1 0 0 1-1.9.22 6.34 6.34 0 0 1-3.34-.79 5.5 5.5 0 0 1-1.83-1.34 5.47 5.47 0 0 1-1.35-1.82 6.25 6.25 0 0 1-.8-3.32c0-1.36.17-2.04.8-3.32.39-.79.6-1.06 1.35-1.81a7.17 7.17 0 0 1 3.84-2.06 8.8 8.8 0 0 1 3.14.1Zm-17.7.83c.55.06 1.45.2 1.99.3 1.1.22 2.92.8 3.9 1.24l.65.3-.28.72c-.15.4-.38 1.18-.5 1.74-.17.85-.2 1.24-.16 2.3.06 1.47.34 2.7.9 3.9 1.3 2.79 3.8 4.9 6.79 5.68.83.22 1.19.26 2.42.27h1.44l.06.25c.03.14.08 1.47.12 2.96l.05 2.7H2.91l.05-2.7c.04-2.14.1-2.95.25-3.84a19.29 19.29 0 0 1 3.33-7.96 19.32 19.32 0 0 1 17.32-7.86Zm15.22 2.01c-.18.1-.42.3-.54.47-.19.26-.22.46-.25 1.3l-.04 1h-.88c-1.02 0-1.44.15-1.78.63-.16.23-.22.44-.22.84 0 .4.06.62.22.84.35.48.76.63 1.79.63h.9v.89c0 1.01.14 1.43.62 1.77.23.16.44.22.84.22.4 0 .62-.06.85-.22.48-.34.63-.76.63-1.77v-.9h.89c1.02 0 1.44-.14 1.78-.62.17-.22.22-.44.22-.84 0-.4-.05-.61-.22-.84-.34-.48-.76-.62-1.78-.62h-.9v-.9c0-1-.14-1.43-.6-1.76a1.68 1.68 0 0 0-1.53-.12Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Бадмацыренова А.Б.</div>
+                          <div class="testimonial__info-row">Врач: Базардоржиев К.О.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>
+                          Имеется спорная точка зрения, гласящая примерно следующее: сделанные на
+                          базе интернет-аналитики выводы, инициированные исключительно синтетически,
+                          описаны максимально подробно.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <img
+                            src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=100&amp;h=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                            class="testimonial__ava-img"
+                          />
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Сидорова А.Б.</div>
+                          <div class="testimonial__info-row">Врач: Петров В.В.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>Имеется спорная точка зрения, гласящая примерно следующее</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <img
+                            src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=100&amp;h=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                            class="testimonial__ava-img"
+                          />
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Иванов И.И.</div>
+                          <div class="testimonial__info-row">Врач: Петров В.В.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>
+                          Имеется спорная точка зрения, гласящая примерно следующее: сделанные на
+                          базе интернет-аналитики выводы, инициированные исключительно синтетически,
+                          описаны максимально подробно. Прежде всего, повышение уровня гражданского
+                          сознания не оставляет шанса для позиций, занимаемых участниками в
+                          отношении поставленных задач.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <svg viewBox="0 0 50 50" class="testimonial__ava-icon">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20.03.14c-1.6.27-3.43 1-4.86 1.94a13.16 13.16 0 0 0-3.48 3.52 13.02 13.02 0 0 0-1.83 4.74 12.5 12.5 0 0 0 .99 7.12c.78 1.7 2.5 3.79 3.9 4.74.3.21.56.4.56.44a3 3 0 0 1-.67.3A22.48 22.48 0 0 0 2.07 34.26 21.77 21.77 0 0 0 .1 41.6c-.07.72-.1 2.5-.08 4.35.03 3.05.03 3.13.25 3.43.12.17.37.37.55.46.3.15 2.16.16 21.27.16s20.96-.01 21.27-.16c.18-.09.43-.3.55-.46.22-.3.22-.34.22-3.87 0-1.96-.03-3.93-.08-4.36l-.08-.8.74-.4c.84-.46 1.99-1.34 2.58-1.99a10.74 10.74 0 0 0 2.46-4.43c.23-.86.26-1.14.26-2.58a7.6 7.6 0 0 0-.25-2.55 10.5 10.5 0 0 0-7.4-7.38 7.67 7.67 0 0 0-2.6-.27 7.5 7.5 0 0 0-2.56.26c-1.7.45-3.15 1.25-4.44 2.42l-.66.6-.71-.31c-.39-.18-1.14-.49-1.67-.68l-.97-.36.67-.48c1.5-1.06 3.1-3.02 3.9-4.74a12.52 12.52 0 0 0 1.14-5.22c0-2.29-.7-4.61-1.98-6.64a13.6 13.6 0 0 0-2.23-2.56 13.65 13.65 0 0 0-2.65-1.78C26.7.81 25.11.31 24.04.14c-1.13-.19-2.9-.18-4.01 0Zm4.3 3.07a9.99 9.99 0 0 1 4.05 2.13 10.17 10.17 0 0 1 2.85 4.75c.17.7.21 1.17.21 2.2a8 8 0 0 1-.97 4.15 8.95 8.95 0 0 1-4.22 4.2 8.1 8.1 0 0 1-4.17.97 8.1 8.1 0 0 1-4.17-.97 8.95 8.95 0 0 1-4.22-4.2 8 8 0 0 1-.97-4.15c0-1.03.04-1.5.21-2.18.24-.96.8-2.2 1.34-3.04A9.36 9.36 0 0 1 18 3.9a8.44 8.44 0 0 1 4.43-.92c.6.02 1.45.13 1.9.24Zm17.24 20.66c.32.08 1 .35 1.52.6.79.39 1.07.6 1.83 1.34.75.75.96 1.04 1.35 1.82.63 1.28.79 1.96.79 3.32 0 1.37-.16 2.04-.8 3.32a5.4 5.4 0 0 1-1.34 1.81c-.68.67-1.09.99-1.69 1.3-.43.22-1.14.5-1.57.62a6.1 6.1 0 0 1-1.9.22 6.34 6.34 0 0 1-3.34-.79 5.5 5.5 0 0 1-1.83-1.34 5.47 5.47 0 0 1-1.35-1.82 6.25 6.25 0 0 1-.8-3.32c0-1.36.17-2.04.8-3.32.39-.79.6-1.06 1.35-1.81a7.17 7.17 0 0 1 3.84-2.06 8.8 8.8 0 0 1 3.14.1Zm-17.7.83c.55.06 1.45.2 1.99.3 1.1.22 2.92.8 3.9 1.24l.65.3-.28.72c-.15.4-.38 1.18-.5 1.74-.17.85-.2 1.24-.16 2.3.06 1.47.34 2.7.9 3.9 1.3 2.79 3.8 4.9 6.79 5.68.83.22 1.19.26 2.42.27h1.44l.06.25c.03.14.08 1.47.12 2.96l.05 2.7H2.91l.05-2.7c.04-2.14.1-2.95.25-3.84a19.29 19.29 0 0 1 3.33-7.96 19.32 19.32 0 0 1 17.32-7.86Zm15.22 2.01c-.18.1-.42.3-.54.47-.19.26-.22.46-.25 1.3l-.04 1h-.88c-1.02 0-1.44.15-1.78.63-.16.23-.22.44-.22.84 0 .4.06.62.22.84.35.48.76.63 1.79.63h.9v.89c0 1.01.14 1.43.62 1.77.23.16.44.22.84.22.4 0 .62-.06.85-.22.48-.34.63-.76.63-1.77v-.9h.89c1.02 0 1.44-.14 1.78-.62.17-.22.22-.44.22-.84 0-.4-.05-.61-.22-.84-.34-.48-.76-.62-1.78-.62h-.9v-.9c0-1-.14-1.43-.6-1.76a1.68 1.68 0 0 0-1.53-.12Z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Бадмацыренова А.Б.</div>
+                          <div class="testimonial__info-row">Врач: Базардоржиев К.О.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>
+                          Имеется спорная точка зрения, гласящая примерно следующее: сделанные на
+                          базе интернет-аналитики выводы, инициированные исключительно синтетически,
+                          описаны максимально подробно.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="swiper-slide testimonials__slide">
+                    <article class="testimonial">
+                      <div class="testimonial__head">
+                        <div class="testimonial__ava">
+                          <img
+                            src="https://images.unsplash.com/photo-1590031905406-f18a426d772d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2.5&amp;w=100&amp;h=100&amp;q=80"
+                            alt="#"
+                            loading="lazy"
+                            decoding="async"
+                            class="testimonial__ava-img"
+                          />
+                        </div>
+                        <div class="testimonial__info">
+                          <div class="testimonial__info-row">Сидорова А.Б.</div>
+                          <div class="testimonial__info-row">Врач: Петров В.В.</div>
+                        </div>
+                      </div>
+                      <div class="testimonial__desc">
+                        <p>Имеется спорная точка зрения, гласящая примерно следующее</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__scrollbar"></div>
+          </section>
+          <section class="request">
+            <div class="request__head">
+              <h2 class="request__title">Остались вопросы?</h2>
+              <p class="request__text">
+                Заполните форму обратной связи и наш специалист свяжется с вами в ближайшее время и
+                ответит на все интересующие вопросы
+              </p>
+            </div>
+            <form action="" class="request__form">
+              <div class="request__row">
+                <div class="input input_secondary">
+                  <input
+                    class="input__input"
+                    type="text"
+                    as="button"
+                    name="name"
+                    placeholder="ФИО"
+                    required
+                  />
+                </div>
+                <div class="input input_secondary">
+                  <input
+                    class="input__input"
+                    type="tel"
+                    as="button"
+                    name="phone"
+                    placeholder="+ 7 (___) __-__-__"
+                    required
+                  />
+                </div>
+                <button class="button button_tertiary button_md request__button" type="submit">
+                  Отправить
+                </button>
+              </div>
+              <label class="checkbox checkbox_secondary" style=""
+                ><input class="checkbox__input" type="checkbox" name="allow" required /><span
+                  class="checkbox__box"
+                  aria-hidden="true"
+                  ><svg viewBox="0 0 10 7" fill="none" class="checkbox__icon">
+                    <path
+                      d="M8.28 1.1 3.47 5.9l-2.4-2.4"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path></svg></span
+                ><span class="checkbox__label"
+                  >Я согласен на обработку своих персональных данных</span
+                ></label
+              >
+            </form>
+          </section>
+          <section class="useful">
+            <h2 class="title useful__title">Полезные ссылки</h2>
+            <div class="useful__content">
+              <button class="useful__prev">
+                <svg viewBox="0 0 8 13">
+                  <path d="M7.94 1.42 6.84.32.65 6.5l6.19 6.19 1.1-1.1L2.86 6.5l5.08-5.08Z"></path>
+                </svg></button
+              ><button class="useful__next">
+                <svg viewBox="0 0 8 13">
+                  <path d="m.06 11.58 1.1 1.1L7.35 6.5 1.16.31l-1.1 1.1L5.14 6.5.06 11.58Z"></path>
+                </svg>
+              </button>
+              <div class="swiper useful__slider">
+                <div class="swiper-wrapper useful__wrapper">
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                  <div class="swiper-slide useful__slide">
+                    <a href="#" class="useful__item"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Emblem_of_Ministry_of_Health_of_Russia.svg/929px-Emblem_of_Ministry_of_Health_of_Russia.svg.png"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        class="useful__item-img"
+                      />
+                      <p class="useful__item-text">
+                        Министерство здравоохранения Российской Федерации
+                      </p></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contacts" class="contacts">
+            <div class="contacts__main">
+              <h2 class="title contacts__title">Контакты</h2>
+              <div class="contacts__plate">
+                <div class="contacts__logo">
+                  <img
+                    src="assets/img/logo.jpg"
+                    width="162"
+                    height="162"
+                    class="contacts__logo-img"
+                    loading="lazy"
+                    decoding="async"
+                    alt=""
+                  />
+                  <div>
+                    <b class="contacts__logo-title">ЭМЧИ</b
+                    ><span class="contacts__logo-lead">медицинский профилактический центр</span>
+                  </div>
+                </div>
+                <address class="contacts__items">
+                  <div class="contacts__item">
+                    <svg viewBox="0 0 20 20">
+                      <path
+                        d="M10 1.67A5.83 5.83 0 0 0 4.17 7.5c0 3.47 3.68 8.27 5.2 10.1.33.4.94.4 1.27 0 1.51-1.83 5.2-6.63 5.2-10.1A5.83 5.83 0 0 0 10 1.67Zm0 7.91a2.08 2.08 0 1 1 0-4.17 2.08 2.08 0 0 1 0 4.17Z"
+                      ></path></svg
+                    ><span>г. Улан-Удэ, ул. Свердлова, 1</span>
+                  </div>
+                  <div class="contacts__item">
+                    <svg viewBox="0 0 20 20">
+                      <path
+                        d="m14.48 9-1.83-1.84a.84.84 0 0 1-.2-.85c.3-.93.47-1.93.47-2.98 0-.46.37-.83.83-.83h2.92c.45 0 .83.38.83.83 0 7.83-6.34 14.17-14.17 14.17a.84.84 0 0 1-.83-.83v-2.91c0-.46.38-.83.83-.83a9.5 9.5 0 0 0 2.98-.48c.29-.1.62-.02.85.2l1.83 1.83c2.36-1.2 4.3-3.13 5.5-5.49Z"
+                      ></path></svg
+                    ><a href="tel:+7(3012)37-99-20">+7 (3012) 37-99-20</a>
+                  </div>
+                  <div class="contacts__item">
+                    <svg viewBox="0 0 20 20">
+                      <path
+                        d="M16.67 3.33H3.33c-.91 0-1.66.75-1.66 1.67v10c0 .92.75 1.67 1.66 1.67h13.34c.91 0 1.66-.75 1.66-1.67V5c0-.92-.75-1.67-1.66-1.67Zm-.34 3.55-5.45 3.4a1.6 1.6 0 0 1-1.76 0l-5.45-3.4a.7.7 0 1 1 .75-1.2L10 9.17l5.58-3.5a.7.7 0 1 1 .75 1.2Z"
+                      ></path></svg
+                    ><a href="mailto:hippocrat-info@mail.ru">hippocrat-info@mail.ru</a>
+                  </div>
+                </address>
+                <ul class="social social_light">
+                  <li>
+                    <a href="#" class="social__link" aria-label="Instagram"
+                      ><svg viewBox="0 0 10 10" class="h-3.5" aria-hidden="true">
+                        <path
+                          d="M5 .9h2.05c.48 0 .72.12.9.18.24.12.42.19.6.37s.3.36.37.6c.06.18.12.42.18.9v4.1c0 .48-.12.72-.18.9-.12.24-.19.42-.37.6s-.36.3-.6.37a4.5 4.5 0 0 1-.9.18h-4.1c-.48 0-.72-.12-.9-.18-.24-.12-.42-.19-.6-.37s-.3-.36-.37-.6a4.53 4.53 0 0 1-.18-.9v-4.1c0-.48.12-.72.18-.9.12-.24.19-.42.37-.6s.36-.3.6-.37c.18-.06.42-.12.9-.18H5ZM5 0H2.95a3.02 3.02 0 0 0-2.1.84c-.3.3-.43.55-.6.9-.13.3-.19.67-.25 1.21v4.1a3.02 3.02 0 0 0 .84 2.1c.3.3.55.43.9.6.3.13.67.19 1.21.25h4.1a3.02 3.02 0 0 0 2.1-.84c.3-.3.43-.55.6-.9.13-.3.19-.67.25-1.21v-4.1a3.02 3.02 0 0 0-.84-2.1 2.9 2.9 0 0 0-.9-.6C7.95.11 7.58.05 7.04 0H5Z"
+                        ></path>
+                        <path
+                          d="M5 2.41A2.57 2.57 0 0 0 2.41 5 2.57 2.57 0 0 0 5 7.59 2.57 2.57 0 0 0 7.59 5 2.57 2.57 0 0 0 5 2.41Zm0 4.28A1.68 1.68 0 1 1 5 3.3c.9 0 1.69.73 1.69 1.69 0 .9-.79 1.69-1.69 1.69Zm2.65-3.74a.6.6 0 1 0 0-1.2.6.6 0 0 0 0 1.2Z"
+                        ></path></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social__link" aria-label="Telegram"
+                      ><svg viewBox="0 0 10 9" class="right-px top-px h-3" aria-hidden="true">
+                        <path
+                          d="M10 .3 8.5 8.15s-.21.54-.8.28L4.25 5.68l-.01-.01L8.48 1.7c.25-.24.1-.38-.19-.2L2.93 5.03.86 4.3S.53 4.19.5 3.92c-.03-.26.37-.4.37-.4L9.31.1s.69-.32.69.2Z"
+                        ></path></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" class="social__link" aria-label="Whatsapp"
+                      ><svg viewBox="0 0 11 11" class="left-px h-3.5" aria-hidden="true">
+                        <path
+                          d="M8.96 2.03A5.21 5.21 0 0 0 .73 8.3L0 11l2.78-.73a5.22 5.22 0 0 0 7.72-4.6 5.32 5.32 0 0 0-1.54-3.64ZM7.8 7.57c-.1.3-.62.59-.88.62-.21.04-.5.04-.8-.03-.18-.08-.44-.15-.73-.3A5.4 5.4 0 0 1 3.16 5.9c-.08-.08-.55-.7-.55-1.35 0-.66.33-.95.44-1.1.1-.14.25-.14.36-.14h.26c.07 0 .18-.04.3.22.1.25.36.9.4.94.03.08.03.15 0 .22a.78.78 0 0 1-.15.22c-.08.07-.15.18-.19.22-.07.07-.14.15-.07.26.07.14.33.54.73.9.52.44.92.59 1.06.66.15.08.22.04.3-.03.07-.08.33-.37.4-.51.07-.15.18-.11.3-.08a9.84 9.84 0 0 1 1.13.59c.03.1.03.36-.08.65Z"
+                        ></path></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts__side">
+              <iframe
+                src="https://yandex.com/map-widget/v1/-/CCUnNUam9C"
+                widthw="560"
+                heightw="400"
+                frameborder="1"
+                allowfullscreen="true"
+                loading="lazy"
+                class="contacts__map"
+              ></iframe>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__brand">
+              <a href="." class="logo"
+                ><img src="assets/img/logo.jpg" width="162" height="162" class="logo__img" alt="" />
+                <div>
+                  <b class="logo__title">ЭМЧИ</b
+                  ><span class="logo__lead">медицинский профилактический центр</span>
+                </div></a
+              >
+              <div class="footer__copyright">© АНО «МПЦ «ЭМЧИ». Все права защищены 2022.</div>
+            </div>
+            <div class="footer__content">
+              <ul class="footer__list">
+                <li><a class="footer__list-link" href="#">О нас</a></li>
+                <li><a class="footer__list-link" href="#services">Услуги</a></li>
+                <li><a class="footer__list-link" href="#news">Новости</a></li>
+                <li><a class="footer__list-link" href="#">Вопрос-ответ</a></li>
+                <li><a class="footer__list-link" href="#">Документы</a></li>
+                <li><a class="footer__list-link" href="#contacts">Контакты</a></li>
+              </ul>
+              <div class="footer__contacts">
+                <a href="tel:+7(3012)37-99-20" class="footer__contacts-link">+7 (3012) 37-99-20</a
+                ><a href="mailto:hippocrat-info@mail.ru" class="footer__contacts-link mr-4"
+                  >hippocrat-info@mail.ru</a
+                ><button
+                  class="button button_secondary button_md footer__button"
+                  onclick="callbackModal.showModal()"
+                  type="button"
+                >
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+            <ul class="social footer__social">
+              <li>
+                <a href="#" class="social__link" aria-label="Instagram"
+                  ><svg viewBox="0 0 10 10" class="h-3.5" aria-hidden="true">
+                    <path
+                      d="M5 .9h2.05c.48 0 .72.12.9.18.24.12.42.19.6.37s.3.36.37.6c.06.18.12.42.18.9v4.1c0 .48-.12.72-.18.9-.12.24-.19.42-.37.6s-.36.3-.6.37a4.5 4.5 0 0 1-.9.18h-4.1c-.48 0-.72-.12-.9-.18-.24-.12-.42-.19-.6-.37s-.3-.36-.37-.6a4.53 4.53 0 0 1-.18-.9v-4.1c0-.48.12-.72.18-.9.12-.24.19-.42.37-.6s.36-.3.6-.37c.18-.06.42-.12.9-.18H5ZM5 0H2.95a3.02 3.02 0 0 0-2.1.84c-.3.3-.43.55-.6.9-.13.3-.19.67-.25 1.21v4.1a3.02 3.02 0 0 0 .84 2.1c.3.3.55.43.9.6.3.13.67.19 1.21.25h4.1a3.02 3.02 0 0 0 2.1-.84c.3-.3.43-.55.6-.9.13-.3.19-.67.25-1.21v-4.1a3.02 3.02 0 0 0-.84-2.1 2.9 2.9 0 0 0-.9-.6C7.95.11 7.58.05 7.04 0H5Z"
+                    ></path>
+                    <path
+                      d="M5 2.41A2.57 2.57 0 0 0 2.41 5 2.57 2.57 0 0 0 5 7.59 2.57 2.57 0 0 0 7.59 5 2.57 2.57 0 0 0 5 2.41Zm0 4.28A1.68 1.68 0 1 1 5 3.3c.9 0 1.69.73 1.69 1.69 0 .9-.79 1.69-1.69 1.69Zm2.65-3.74a.6.6 0 1 0 0-1.2.6.6 0 0 0 0 1.2Z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social__link" aria-label="Telegram"
+                  ><svg viewBox="0 0 10 9" class="right-px top-px h-3" aria-hidden="true">
+                    <path
+                      d="M10 .3 8.5 8.15s-.21.54-.8.28L4.25 5.68l-.01-.01L8.48 1.7c.25-.24.1-.38-.19-.2L2.93 5.03.86 4.3S.53 4.19.5 3.92c-.03-.26.37-.4.37-.4L9.31.1s.69-.32.69.2Z"
+                    ></path></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social__link" aria-label="Whatsapp"
+                  ><svg viewBox="0 0 11 11" class="left-px h-3.5" aria-hidden="true">
+                    <path
+                      d="M8.96 2.03A5.21 5.21 0 0 0 .73 8.3L0 11l2.78-.73a5.22 5.22 0 0 0 7.72-4.6 5.32 5.32 0 0 0-1.54-3.64ZM7.8 7.57c-.1.3-.62.59-.88.62-.21.04-.5.04-.8-.03-.18-.08-.44-.15-.73-.3A5.4 5.4 0 0 1 3.16 5.9c-.08-.08-.55-.7-.55-1.35 0-.66.33-.95.44-1.1.1-.14.25-.14.36-.14h.26c.07 0 .18-.04.3.22.1.25.36.9.4.94.03.08.03.15 0 .22a.78.78 0 0 1-.15.22c-.08.07-.15.18-.19.22-.07.07-.14.15-.07.26.07.14.33.54.73.9.52.44.92.59 1.06.66.15.08.22.04.3-.03.07-.08.33-.37.4-.51.07-.15.18-.11.3-.08a9.84 9.84 0 0 1 1.13.59c.03.1.03.36-.08.65Z"
+                    ></path></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
