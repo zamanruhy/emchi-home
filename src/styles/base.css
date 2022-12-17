@@ -1,0 +1,72 @@
+@tailwind base;
+
+@layer base {
+  /* Museo Sans Cyrl */
+  @font-face {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/MuseoSansCyrl-100.woff2) format("woff2"),
+      url(/assets/fonts/MuseoSansCyrl-100.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/MuseoSansCyrl-300.woff2) format("woff2"),
+      url(/assets/fonts/MuseoSansCyrl-300.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/MuseoSansCyrl-500.woff2) format("woff2"),
+      url(/assets/fonts/MuseoSansCyrl-500.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/MuseoSansCyrl-700.woff2) format("woff2"),
+      url(/assets/fonts/MuseoSansCyrl-700.woff) format("woff");
+  }
+  @font-face {
+    font-family: "Museo Sans Cyrl";
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/MuseoSansCyrl-900.woff2) format("woff2"),
+      url(/assets/fonts/MuseoSansCyrl-900.woff) format("woff");
+  }
+
+  /* Rodeo */
+  @font-face {
+    font-family: "Rodeo";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/Rodeo-Regular.woff2) format("woff2"),
+      url(/assets/fonts/Rodeo-Regular.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Rodeo";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url(/assets/fonts/Rodeo-Bold.woff2) format("woff2"),
+      url(/assets/fonts/Rodeo-Bold.woff) format("woff");
+  }
+
+  html {
+    @apply h-full scroll-pt-7 scroll-smooth antialiased;
+  }
+
+  body {
+    @apply h-full bg-white font-brand text-base leading-tighter text-primary-500;
+  }
+}

@@ -1,0 +1,34 @@
+.checkbox {
+  @apply relative isolate flex w-fit cursor-pointer select-none items-center;
+
+  &__input {
+    @apply sr-only;
+  }
+  &__box {
+    @apply relative flex h-[15px] w-[15px] shrink-0 items-center justify-center rounded-[2px];
+  }
+  &_primary &__box {
+    @apply bg-primary-500;
+  }
+  &_secondary &__box {
+    @apply bg-white;
+  }
+  &__icon {
+    @apply ml-px hidden w-[10px] [input:checked~*>&]:block;
+  }
+  &_primary &__icon {
+    @apply text-white;
+  }
+  &_secondary &__icon {
+    @apply text-primary-500;
+  }
+  &__label {
+    @apply ml-[6px] mt-px text-[10px] font-light;
+  }
+  &_primary &__label {
+    @apply text-primary-500;
+  }
+  &_secondary &__label {
+    @apply text-white;
+  }
+}

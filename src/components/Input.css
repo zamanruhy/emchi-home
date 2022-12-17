@@ -1,0 +1,15 @@
+.input {
+  @apply relative;
+
+  &__input {
+    @apply block min-h-[45px] w-full rounded border
+      bg-white px-5 py-1 transition placeholder:text-[color:inherit] placeholder:opacity-50
+        focus:outline-none;
+  }
+  &_primary &__input {
+    @apply border-primary-500 bg-transparent text-primary-500;
+  }
+  &_secondary &__input {
+    @apply border-white bg-transparent text-white;
+  }
+}

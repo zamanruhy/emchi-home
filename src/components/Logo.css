@@ -1,0 +1,13 @@
+.logo {
+  @apply flex items-center;
+
+  &__img {
+    @apply mr-4 w-16 shrink-0 rounded-full md:w-20;
+  }
+  &__title {
+    @apply block font-display text-lg font-bold leading-none md:text-2xl;
+  }
+  &__lead {
+    @apply mt-0.5 block text-xs font-light;
+  }
+}

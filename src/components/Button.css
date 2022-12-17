@@ -1,0 +1,16 @@
+.button {
+  @apply relative inline-flex cursor-pointer items-center justify-center text-center align-middle transition;
+
+  &_primary {
+    @apply bg-primary-500 text-white hover:bg-primary-400;
+  }
+  &_secondary {
+    @apply border border-white text-white hover:bg-white hover:text-primary-500;
+  }
+  &_tertiary {
+    @apply bg-white text-primary-500 hover:bg-white/90;
+  }
+  &_md {
+    @apply min-h-[45px] rounded py-1 px-4 text-base;
+  }
+}
