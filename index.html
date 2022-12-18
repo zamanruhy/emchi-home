@@ -110,6 +110,13 @@
             </div>
           </div>
           <dialog id="callbackModal" class="callback">
+            <button class="callback__close" onclick="this.closest('dialog').close()">
+              <svg viewBox="0 0 371.23 371.23">
+                <path
+                  d="M371.23 21.21 350.02 0l-164.4 164.4L21.22 0 0 21.21l164.4 164.4L0 350.01l21.21 21.22 164.4-164.4 164.4 164.4 21.22-21.21-164.4-164.4z"
+                ></path>
+              </svg>
+            </button>
             <h3 class="callback__title">Заказать обратный звонок</h3>
             <p class="callback__lead">
               Заполните форму обратной связи и наш специалист свяжется с вами в ближайшее время и
@@ -137,12 +144,16 @@
                     required
                   />
                 </div>
-                <button class="button button_primary button_md callback__button" type="submit">
+                <button
+                  class="button button_primary button_md callback__button"
+                  disabled
+                  type="submit"
+                >
                   Отправить
                 </button>
               </div>
               <label class="checkbox checkbox_primary" style=""
-                ><input class="checkbox__input" type="checkbox" name="allow" required /><span
+                ><input class="checkbox__input" type="checkbox" name="confirm" required /><span
                   class="checkbox__box"
                   aria-hidden="true"
                   ><svg viewBox="0 0 10 7" fill="none" class="checkbox__icon">
@@ -820,12 +831,16 @@
                     required
                   />
                 </div>
-                <button class="button button_tertiary button_md request__button" type="submit">
+                <button
+                  class="button button_tertiary button_md request__button"
+                  disabled
+                  type="submit"
+                >
                   Отправить
                 </button>
               </div>
               <label class="checkbox checkbox_secondary" style=""
-                ><input class="checkbox__input" type="checkbox" name="allow" required /><span
+                ><input class="checkbox__input" type="checkbox" name="confirm" required /><span
                   class="checkbox__box"
                   aria-hidden="true"
                   ><svg viewBox="0 0 10 7" fill="none" class="checkbox__icon">
